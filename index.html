@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stysheet.css">
+    <title>Rock, Scissors, paper </title>
+    
+</head>
+<body>
+    <div class="wrap">
+    <h1>Rock - Scissors - Paper</h1>
+    <img class="mainImage" id="mainImage" src="./pictures/main.png" alt="rockscissorspaper" width="200px">
+    <div>
+   
+        <button  id="displayChoice" onclick="displayChoice()">New Game</button>
+        
+    </div>
+    <div id="mainChoice">
+        <div class="buttons">
+            <button id="rock" onclick="playGame('rock')"><img src="./pictures/rock.png" alt="rock" width="80px"></button>
+            <button id="scissors" onclick="playGame('scissors')"><img src="./pictures/scissors.png" alt="scissors" width="80px"></button>
+            <button id="paper" onclick="playGame('paper')"><img src="./pictures/paper.png" alt="paper" width="80px"></button>
+        </div>
+        <div class="rightField">
+               
+                <img class="rightImage" id="rightImage" src="./pictures/rock.png" alt="rock" width="180px">
+               
+            </div>
+            <div class="leftFied">
+                <img class="leftImage" id="leftImage" src="./pictures/rock.png" alt="rock" width="180px">
+                
+            </div>
+
+           
+    </div>
+    <footer id="commonDisplay">
+                <div id="playerDisplay">PLAYER: </div>
+                <div id="computerDisplay">COMPUTER: </div>
+                <div id="resultDisplay"> </div>
+    </footer>
+    
+    
+</div>
+    <script src="./script.js" ></script>
+</body>
+</html>
